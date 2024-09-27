@@ -1,0 +1,14 @@
+# Ignore environment file
+.env
+
+# Ignore virtual environment directory
+.venv/
+
+# Ignore migrations directory
+migrations/
+
+# Ignore instance directory
+instance/
+
+# Ignore IDE configurations
+.idea/

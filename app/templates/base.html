@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Website{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        {% block nav %}
+        <p>this is navbar block</p>
+        {% endblock %}
+    </header>
+
+    <main>
+        {% block body %}
+        <p>this is content block</p>
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>This is footer block</p>
+    </footer>
+</body>
+</html>
