@@ -5,9 +5,11 @@ from app.extensions import db, jwt, login_manager
 from app.config import Config
 from app.routes.auth import auth_bp
 from flask_migrate import Migrate
+import pyodbc
+
 
 def create_app():
-    app=Flask(__name__, template_folder='templates')
+    app = Flask(__name__, template_folder='templates')
     app.config.from_object(Config)
 
     # Initialize extensions
