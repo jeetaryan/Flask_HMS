@@ -10,9 +10,9 @@
     flask db migrate -m "Your migration message"
     flask db upgrade
 
-    Mysql Database uri--
+3- Mysql Database uri--
     SQLALCHEMY_DATABASE_URI= f'mysql+pymysql://{user}:{password}@{host}:{port}/{database}'
-3- Create
+4- Create
       session.add(User(name='Alice', email='alice@example.com')); session.commit()
    Read   
       user = session.query(User).filter_by(name='Alice').first(); print(user.name, user.email)
